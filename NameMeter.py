@@ -19,6 +19,15 @@ st.markdown("""
         margin: 30px auto;
         text-align: center;
     }
+    a {
+        display: inline-block;
+        margin: 5px 10px;
+        padding: 8px 15px;
+        background-color: #4caf50;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -77,8 +86,7 @@ if st.session_state.result:
         if st.button("Compare With Friend", use_container_width=True):
             st.session_state.result = None
             st.session_state.show_share = False
-            st.rerun()
-
+            st.experimental_rerun()
 
     # --- Show share links if Share clicked ---
     if st.session_state.show_share:
@@ -88,16 +96,16 @@ Vibez of {r['name']} 🎭
 💖 Love: {r['love']}%
 💢 Hate: {r['hate']}%
 😎 Attitude: {r['attitude']}%
-💪 Confidence: {r['confidence']
+💪 Confidence: {r['confidence']}%
 🐍 Jealousy: {r['jealousy']}%
 
 👉 Check yours here: https://namemeterpy-2elxzmxezncqpfwtaewq5b.streamlit.app/
 """
         whatsapp_url = "https://api.whatsapp.com/send?text=" + urllib.parse.quote(share_text)
-        insta_url = "https://www.instagram.com/?url=" + urllib.parse.quote("https://NameMeter.com")
-        snapchat_url = "https://www.snapchat.com/scan?attachmentUrl=" + urllib.parse.quote("https://NameMeter.com")
+        instagram_url = "https://www.instagram.com/?url=" + urllib.parse.quote("https://namemeterpy-2elxzmxezncqpfwtaewq5b.streamlit.app/")
+        snapchat_url = "https://www.snapchat.com/scan?attachmentUrl=" + urllib.parse.quote("https://namemeterpy-2elxzmxezncqpfwtaewq5b.streamlit.app/")
 
         st.markdown("<h4 style='text-align:center;'>Choose Platform</h4>", unsafe_allow_html=True)
         st.markdown(f'<a href="{whatsapp_url}" target="_blank">WhatsApp</a>', unsafe_allow_html=True)
-        st.markdown(f'<a href="{insta_url}" target="_blank">Instagram</a>', unsafe_allow_html=True)
+        st.markdown(f'<a href="{instagram_url}" target="_blank">Instagram</a>', unsafe_allow_html=True)
         st.markdown(f'<a href="{snapchat_url}" target="_blank">Snapchat</a>', unsafe_allow_html=True)
