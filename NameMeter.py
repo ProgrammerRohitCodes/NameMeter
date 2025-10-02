@@ -1,5 +1,5 @@
 import streamlit as st
-import random
+import random 
 import urllib.parse
 
 st.set_page_config(page_title="NameMeter", layout="centered")
