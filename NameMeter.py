@@ -28,7 +28,6 @@ st.title("What Your Name Really Says About You")
 def love(): return round(random.uniform(95, 100), 2)
 def hate(): return round(random.uniform(0, 30), 2)
 def attitude(): return round(random.uniform(60, 95), 2)
-def friendliness(): return round(random.uniform(90, 100), 2)
 def confidence(): return round(random.uniform(50, 90), 2)
 def jealousy(): return round(random.uniform(0, 50), 2)
 
@@ -47,7 +46,6 @@ if st.button("Generate"):
         "love": love(),
         "hate": hate(),
         "attitude": attitude(),
-        "friendliness": friendliness(),
         "confidence": confidence(),
         "jealousy": jealousy(),
     }
@@ -63,7 +61,6 @@ if st.session_state.result:
             <p>💖 Love: {r['love']}%</p>
             <p>💢 Hate: {r['hate']}%</p>
             <p>😎 Attitude: {r['attitude']}%</p>
-            <p>🤝 Friendliness: {r['friendliness']}%</p>
             <p>💪 Confidence: {r['confidence']}%</p>
             <p>🐍 Jealousy: {r['jealousy']}%</p>
         </div>
@@ -91,8 +88,7 @@ Vibez of {r['name']} 🎭
 💖 Love: {r['love']}%
 💢 Hate: {r['hate']}%
 😎 Attitude: {r['attitude']}%
-🤝 Friendliness: {r['friendliness']}%
-💪 Confidence: {r['confidence']}%
+💪 Confidence: {r['confidence']
 🐍 Jealousy: {r['jealousy']}%
 
 👉 Check yours here: https://namemeterpy-2elxzmxezncqpfwtaewq5b.streamlit.app/
