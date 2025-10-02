@@ -85,11 +85,11 @@ if st.session_state.show_share:
     share_text = f"""  
 Vibez of {r['name']} 🎭  
 
-Love: {r['love']}%  
-Hate: {r['hate']}%  
-Attitude: {r['attitude']}%  
-Confidence: {r['confidence']}%  
-Jealousy: {r['jealousy']}%  
+💖 Love: {r['love']}%  
+💢 Hate: {r['hate']}%  
+😎 Attitude: {r['attitude']}%  
+💪 Confidence: {r['confidence']}%  
+🐍 Jealousy: {r['jealousy']}%  
 
 👉 Check yours here: https://namemeterpy-2elxzmxezncqpfwtaewq5b.streamlit.app/  
 """  
