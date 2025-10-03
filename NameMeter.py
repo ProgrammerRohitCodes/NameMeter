@@ -91,7 +91,7 @@ Vibez of {r['name']} 🎭
 💪 Confidence: {r['confidence']}%  
 🐍 Jealousy: {r['jealousy']}%  
 
-👉 Check yours here: https://namemeterpy.streamlit.app/  
+👉 Check yours here: https://namemeter.streamlit.app/  
 """  
     whatsapp_url = "https://api.whatsapp.com/send?text=" + urllib.parse.quote(share_text)  
     insta_url = "https://www.instagram.com/?url=" + urllib.parse.quote("https://NameMeter.com")  
